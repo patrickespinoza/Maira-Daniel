@@ -21,9 +21,9 @@ export default function Itinerario() {
           fecha="17"
           mesAnio="Julio 2026"
           hora="20:00 hrs"
-          lugar="Jardín Magnolia"
-          direccion="Ave. Pablo Livas 132 Col. Acapulco Gadalupe, NL"
-          ubicacion="https://maps.app.goo.gl/TsSDUBKAractwi8F8"
+          lugar="XISA Salón de Eventos"
+          direccion="Av. Pablo Livas 132, Acapulco, 67198 Guadalupe, N.L."
+          ubicacion="https://maps.app.goo.gl/LW35Yr4zmqBwWLV27"
         />
 
 
