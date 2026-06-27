@@ -5,6 +5,7 @@ import Intinerario2 from "./componentes-encabezado/itinerario2";
 import Novios from "./componentes-encabezado/novios";
 import ConfirmacionWhatsapp from "./componentes-encabezado/confirmacion";
 import Portada from "./componentes-encabezado/imagenfrase";
+import MesaRegalos from "./componentes-encabezado/mesaregalo";
 
 export default function Itinerario() {
 
@@ -35,8 +36,8 @@ export default function Itinerario() {
       {/* SECCIÓN ITINERARIO */}
       <Intinerario2/>
 
-      {/* CONFIRMACIÓN */}
-
+      {/* regalos */}
+      <MesaRegalos/>
       {/* IMAGEN FINAL */}
         <Portada />
       
