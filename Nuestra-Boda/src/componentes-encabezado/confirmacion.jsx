@@ -22,8 +22,20 @@ Número de personas: ${invitados}.
 ${mensaje ? `Mensaje: ${mensaje}` : ""}
     `.trim();
 
-    const url = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(texto)}`;
+    const url = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(
+      texto
+    )}`;
+
+    // Abrir WhatsApp
     window.open(url, "_blank");
+
+    // Limpiar formulario después de abrir WhatsApp
+    setTimeout(() => {
+      setNombre("");
+      setAsistencia("");
+      setInvitados("1");
+      setMensaje("");
+    }, 300);
   };
 
   return (
@@ -73,10 +85,12 @@ ${mensaje ? `Mensaje: ${mensaje}` : ""}
           </p>
 
           <div className="mt-10 space-y-5 text-left">
+            {/* Nombre */}
             <div>
               <label className="block text-[#5E6650] text-xs uppercase tracking-[0.22em] mb-2">
                 Nombre completo
               </label>
+
               <input
                 type="text"
                 value={nombre}
@@ -97,10 +111,12 @@ ${mensaje ? `Mensaje: ${mensaje}` : ""}
               />
             </div>
 
+            {/* Asistencia */}
             <div>
               <label className="block text-[#5E6650] text-xs uppercase tracking-[0.22em] mb-2">
                 ¿Asistirás?
               </label>
+
               <select
                 value={asistencia}
                 onChange={(e) => setAsistencia(e.target.value)}
@@ -123,36 +139,39 @@ ${mensaje ? `Mensaje: ${mensaje}` : ""}
               </select>
             </div>
 
+            {/* Invitados */}
             <div>
-  <label className="block text-[#5E6650] text-xs uppercase tracking-[0.22em] mb-2">
-    Número de personas
-  </label>
+              <label className="block text-[#5E6650] text-xs uppercase tracking-[0.22em] mb-2">
+                Número de personas
+              </label>
 
-  <input
-    type="number"
-    min="1"
-    placeholder="Ej. 2"
-    value={invitados}
-    onChange={(e) => setInvitados(e.target.value)}
-    className="
-      w-full
-      bg-[#FFFDF8]
-      border
-      border-[#B89B5E]/35
-      px-5
-      py-4
-      text-[#3F433A]
-      outline-none
-      focus:border-[#5E6650]
-      transition
-    "
-  />
-</div>
+              <input
+                type="number"
+                min="1"
+                placeholder="Ej. 2"
+                value={invitados}
+                onChange={(e) => setInvitados(e.target.value)}
+                className="
+                  w-full
+                  bg-[#FFFDF8]
+                  border
+                  border-[#B89B5E]/35
+                  px-5
+                  py-4
+                  text-[#3F433A]
+                  outline-none
+                  focus:border-[#5E6650]
+                  transition
+                "
+              />
+            </div>
 
+            {/* Mensaje */}
             <div>
               <label className="block text-[#5E6650] text-xs uppercase tracking-[0.22em] mb-2">
                 Mensaje opcional
               </label>
+
               <textarea
                 value={mensaje}
                 onChange={(e) => setMensaje(e.target.value)}
