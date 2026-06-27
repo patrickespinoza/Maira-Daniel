@@ -55,7 +55,7 @@ const MesaRegalos = () => {
               scale: 1.02,
             }}
             transition={{ duration: .4 }}
-            src="/mesaregalos.jpg"
+            src="/final.png"
             alt="Mesa de regalos"
             className="
               relative

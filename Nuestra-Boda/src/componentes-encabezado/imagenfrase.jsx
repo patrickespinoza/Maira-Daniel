@@ -15,7 +15,7 @@ export default function Portada() {
         "
       >
         <img
-          src="/frase.jpg"
+          src="/frase2.jpg"
           alt="Portada"
           className="
             w-full

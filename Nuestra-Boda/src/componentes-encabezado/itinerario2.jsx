@@ -4,11 +4,6 @@ import { motion } from "framer-motion";
 const Itinerario2 = () => {
   const eventos = [
     {
-      titulo: "Ceremoni Civil",
-      imagen: "/Catedral.png",
-      hora: "7:30 pm",
-    },
-    {
       titulo: "Entrada de Novios",
       imagen: "/arco-de-la-boda.png",
       hora: "8:10 pm",

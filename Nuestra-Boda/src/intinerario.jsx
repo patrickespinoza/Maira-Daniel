@@ -6,11 +6,13 @@ import Novios from "./componentes-encabezado/novios";
 import ConfirmacionWhatsapp from "./componentes-encabezado/confirmacion";
 import Portada from "./componentes-encabezado/imagenfrase";
 import MesaRegalos from "./componentes-encabezado/mesaregalo";
+import Musica from "./componentes-encabezado/musica";
 
 export default function Itinerario() {
 
   return (
     <div>
+      <Musica/>
 
 {/* SECCIÓN VESTIMENTA */}
       {/* SECCIÓN CELEBRACIONES */}
