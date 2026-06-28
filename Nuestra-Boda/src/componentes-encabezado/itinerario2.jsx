@@ -21,7 +21,7 @@ const Itinerario2 = () => {
     {
       titulo: "Show Party",
       imagen: "/bola-de-disco.png",
-      hora: "10:00 pm",
+      hora: "11:30 pm",
     },
   ];
 

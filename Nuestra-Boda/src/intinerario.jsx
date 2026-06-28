@@ -15,6 +15,7 @@ export default function Itinerario() {
       <Musica/>
 
 {/* SECCIÓN VESTIMENTA */}
+<Portada />
       {/* SECCIÓN CELEBRACIONES */}
       <div className="overflow-hidden">
 
@@ -41,7 +42,6 @@ export default function Itinerario() {
       {/* regalos */}
       <MesaRegalos/>
       {/* IMAGEN FINAL */}
-        <Portada />
       
       <ConfirmacionWhatsapp/>
     </div>
